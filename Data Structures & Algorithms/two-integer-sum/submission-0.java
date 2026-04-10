@@ -5,7 +5,7 @@ class Solution {
             if(map.containsKey(target - nums[i])) {
                 return new int[]{map.get(target-nums[i]), i};
             }else {
-                map.put(nums[i],i);
+                map.put(Integer.valueOf(nums[i]), Integer.valueOf(i));
             }
         }
         return null;
